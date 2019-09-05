@@ -10,7 +10,7 @@ Automatic uploading of videos to youtube.
 - do_archive_videos -> if set to <b>true</b> then the videos will be moved to archived videos so they don't get uploaded twice next time.
 - secret_path -> full path to client oauth secret file. (More later)
 - refresh_token_path -> path where the refresh_token will be saved and read from. (do not create your own)
-- default_parameters -> default parameters that are used when no json matches the video file, or when the json doesn't have all the values.
+- default_parameters -> default parameters that are used when no json matches the video file, or when the json doesn't have all the values. NOTE: about categoryID, this is numerical, do not enter a text here cause it will cause request errors. You can look up IDs online or change them after.
 
 ## Video Config
 To create a config linked to a video, create a file with the same name but with extension .json
