@@ -10,6 +10,6 @@
         "privacy": "public",
         "description": "youtube video",
         "tags": ["text", "wow"],
-        "categoryID": null
+        "categoryID": 20
     }
 }
