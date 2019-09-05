@@ -1,0 +1,15 @@
+{
+    "API_name": "youtube",
+    "API_ver": "v3",
+    "videos_path": "/home/chris/videos/",
+    "archived_videos_path": "/home/chris/archived_videos/",
+    "do_archive_videos": true,
+    "secret_path": "/home/chris/Projects/YouTube-Uploader/client_secret.json",
+    "refresh_token_path": "",
+    "default_parameters": {
+        "privacy": "public",
+        "description": "youtube video",
+        "tags": ["text", "wow"],
+        "categoryID": null
+    }
+}
