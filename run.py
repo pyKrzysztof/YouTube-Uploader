@@ -134,9 +134,11 @@ def upload_vid(video, parameters):
                 sleep_seconds = random.random() * max_sleep
                 time.sleep(sleep_seconds)
 
-            else:
+            elif err.resp.status == 400:
                 print(f'Invalid parameters for {video}.')
                 break
+            else:
+                exit('Daily limit reached. Try tommorow.')
 
         except Exception as e:
             attempt += 1
