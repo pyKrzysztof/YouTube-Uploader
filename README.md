@@ -12,6 +12,12 @@ Automatic uploading of videos to youtube.
 - refresh_token_path -> path where the refresh_token will be saved and read from. (do not create your own)
 - default_parameters -> default parameters that are used when no json matches the video file, or when the json doesn't have all the values. NOTE: about categoryID, this is numerical, do not enter a text here cause it will cause request errors. You can look up IDs online or change them after.
 
+## Usage
+It's as simple as running `python3 run.py`
+You need the following packages installed:
+'pip install oauth2client google-api-python-client google-auth-oauthlib google-auth-httplib2'
+Make sure you install them for Python 3.x and not 2.x.
+
 ## Video Config
 To create a config linked to a video, create a file with the same name but with extension .json
 For example if video name is tutorial.mp4 then tutorial.json would contain config of this video.
