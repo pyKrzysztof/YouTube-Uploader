@@ -16,7 +16,7 @@ Automatic uploading of videos to youtube.
 To create a config linked to a video, create a file with the same name but with extension .json
 For example if video name is tutorial.mp4 then tutorial.json would contain config of this video.
 
-Keys are the same as default parameters with additional 'title' key.
+Keys are the same as default parameters with additional 'title' key. By default, the video title is filename without the extension.
 
 
 ## What is this
