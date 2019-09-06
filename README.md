@@ -13,7 +13,7 @@ Automatic uploading of videos to youtube.
 - default_parameters -> default parameters that are used when no json matches the video file, or when the json doesn't have all the values. NOTE: about categoryID, this is numerical, do not enter a text here cause it will cause request errors. You can look up IDs online or change them after.
 
 ## Usage
-It's as simple as running `python3 run.py`
+It's as simple as running `python3 run.py`. The first use will open up the browser and ask you to authorize the application.
 You need the following packages installed:
 `pip install oauth2client google-api-python-client google-auth-oauthlib google-auth-httplib2`
 Make sure you install them for Python 3.x and not 2.x.
