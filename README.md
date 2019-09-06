@@ -15,7 +15,7 @@ Automatic uploading of videos to youtube.
 ## Usage
 It's as simple as running `python3 run.py`
 You need the following packages installed:
-'pip install oauth2client google-api-python-client google-auth-oauthlib google-auth-httplib2'
+`pip install oauth2client google-api-python-client google-auth-oauthlib google-auth-httplib2`
 Make sure you install them for Python 3.x and not 2.x.
 
 ## Video Config
