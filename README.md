@@ -19,7 +19,7 @@ You have to do this before using the script.
 3) Go to library tab and search for YouTube Data API v3, enable it for your project.
 4) Navigate to credentials tab, and add <b>OAuth client ID</b> (of type other)
 5) You may also create the API key but it is not utilized in this project.
-6) Download the client_secret<your-id>.json (your <b>OAuth 2.0 client ID</b>) file. ( I recommend renaming it to client_secret.json)
+6) Download the client_secret(your-id).json (your <b>OAuth 2.0 client ID</b>) file. ( I recommend renaming it to client_secret.json)
 
 ## Usage
 Make sure you adjusted the config.json according to the schematic above. The secret_path HAS TO be valid and point to your oauth2 client ID file.
@@ -29,7 +29,7 @@ You need the following packages installed:
 Make sure you install them for Python 3.x and not 2.x.
 
 After the authorization is completed, the videos from the path you specified will be uploaded to YouTube with default parameters <b>unless</b> you also created a .json file with the same filename as the video and changed the default parameters.
-I highly recommend that you have <b>do_archive_videos</b> (also don't forget to set the path) turned <b>on<b/>, as unless you get rid of these files before the next usage of the script, they would be uploaded twice (not uploaded at all as YouTube knows it's already uploaded that request.) and you would lose your <b>quota</b>.
+I highly recommend that you have <b>do_archive_videos</b> (also don't forget to set the path) turned <b>on</b>, as unless you get rid of these files before the next usage of the script, they would be uploaded twice (not uploaded at all as YouTube knows it's already uploaded that request.) and you would lose your <b>quota</b>.
   
 #### What is Quota and more about YouTube API
 YouTube API utilizes a daily limit of operations that can be requested. Each operation is priced differently. These units are called <b>Quotas<b/>, daily you have access to <b>N<b/> quotas. A video upload has a cost of 1600 quotas. Which initially should give you 6 uploads per day, which I think is enough. But if you need more quotas, then you can request them.
