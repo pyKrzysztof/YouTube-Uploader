@@ -32,7 +32,7 @@ After the authorization is completed, the videos from the path you specified wil
 I highly recommend that you have <b>do_archive_videos</b> (also don't forget to set the path) turned <b>on</b>, as unless you get rid of these files before the next usage of the script, they would be uploaded twice (not uploaded at all as YouTube knows it's already uploaded that request.) and you would lose your <b>quota</b>.
   
 #### What is Quota and more about YouTube API
-YouTube API utilizes a daily limit of operations that can be requested. Each operation is priced differently. These units are called <b>Quotas</b>, daily you have access to <b>N<b/> quotas. A video upload has a cost of 1600 quotas. Which initially should give you 6 uploads per day, which I think is enough. But if you need more quotas, then you can request them.
+YouTube API utilizes a daily limit of operations that can be requested. Each operation is priced differently. These units are called <b>Quotas</b>, daily you have access to <b>N</b> quotas. A video upload has a cost of 1600 quotas. Which initially should give you 6 uploads per day, which I think is enough. But if you need more quotas, then you can request them.
 
 ## Video Config
 To create a config linked to a video, create a file with the same name but with extension .json
