@@ -11,6 +11,12 @@ Automatic uploading of videos to YouTube.
 - secret_path -> full path to client oauth secret file. (More later)
 - refresh_token_path -> path where the refresh_token will be saved and read from. (do not create your own)
 - default_parameters -> default parameters that are used when no json matches the video file, or when the json doesn't have all the values.
+#### Default Parameters:
+- description - default description string in string format.
+- description_as_file - if set to `true`, then `description` will be interpreted as a file, from which the description is read. 
+- privacy - default privacy status of the video.
+- tags - self-explanatory, you specify the tags. The correct syntax is `"tags": [tag_0, ..., tag_n]`.
+- categoryID - this is numerical value of the category, there is the list of the ids: https://gist.github.com/dgp/1b24bf2961521bd75d6c
 
 ## Getting started with the YouTube API
 You have to do this before using the script.
