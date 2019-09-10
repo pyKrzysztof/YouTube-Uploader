@@ -50,13 +50,22 @@ def get_params(jsn):
         if not 'privacy' in data:
             data['privacy'] = DEFAULT_PARAMS['privacy']
         if not 'description' in data:
-            data['description'] = DEFAULT_PARAMS['description']
+            if not 'description_file' in data:
+                data['description'] = DEFAULT_PARAMS['description']
+            else:
+                try:
+                    with open(data['description_file'], 'r') as f:
+                        data['description'] = f.read()
+                except:
+                    raise
+                    data['description'] = DEFAULT_PARAMS['description']
         if not 'tags' in data:
             data['tags'] = DEFAULT_PARAMS['tags']
         if not 'title' in data:
             data['title'] = jsn.replace('.json', '', -1).title()
         if not 'categoryID' in data:
             data['categoryID'] = DEFAULT_PARAMS['categoryID']
+
     return data
 
 def upload_all(pairs, default):
