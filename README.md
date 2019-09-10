@@ -10,7 +10,7 @@ Automatic uploading of videos to YouTube.
 - do_archive_videos -> if set to <b>true</b> then the videos will be moved to archived videos so they don't get uploaded twice next time.
 - secret_path -> full path to client oauth secret file. (More later)
 - refresh_token_path -> path where the refresh_token will be saved and read from. (do not create your own)
-- default_parameters -> default parameters that are used when no json matches the video file, or when the json doesn't have all the values. NOTE: about categoryID, this is numerical, do not enter a text here cause it will cause request errors. You can look up IDs online or change them after.
+- default_parameters -> default parameters that are used when no json matches the video file, or when the json doesn't have all the values.
 
 ## Getting started with the YouTube API
 You have to do this before using the script.
@@ -36,11 +36,15 @@ YouTube API utilizes a daily limit of operations that can be requested. Each ope
 
 ## Video Config
 To create a config linked to a video, create a file with the same name but with extension .json
-For example if video name is tutorial.mp4 then tutorial.json would contain config of this video.
+For example if video name is `tutorial.mp4` then `tutorial.json` would contain config of this video.
 
-Keys are the same as default parameters with additional 'title' key. By default (f not specified), the video title is filename without the extension.
-
+#### Possible keys:
+- title - the title of the video
+- description - is used when no description_file was specified, defaults to `description` of `config.json`.
+- description_file - is used when the description file was provided <b>INSTEAD</b> of the description. If file does not exist, defaults to `description` of `config.json`. NOTE: Please name the files with the `.txt` extension. This will allow the script to ignore those files if they are located inside the `VIDEOS_PATH` folder.
+- privacy - can be either one of these, `private, public`, defaults to `privacy` of `config.json`.
+- tags - self-explanatory, you specify the tags. The correct syntax is `"tags": [tag_0, ..., tag_n]`, defaults to `config.json`.
+- categoryID - this is numerical value of the category, there is the list of the ids: https://gist.github.com/dgp/1b24bf2961521bd75d6c
 
 ## What is this
-
 This is YouTube video uploader which utilizes the YouTube API, to use it you need oauth client secret which you need from google developers website, you have to create a project, download the api, create and download the oauth. I don't want to get into this here, just look it up.
