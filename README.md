@@ -10,8 +10,7 @@ Automatic uploading of videos to YouTube.
 - do_archive_videos -> if set to <b>true</b> then the videos will be moved to archived videos so they don't get uploaded twice next time.
 - secret_path -> full path to client oauth secret file. (More later)
 - refresh_token_path -> path where the refresh_token will be saved and read from. (do not create your own)
-- default_parameters -> default parameters that are used when no json matches the video file, or when the json doesn't have all the values. 
-NOTE: about categoryID, this is numerical, do not enter a text here cause it will cause request errors. You can look up IDs online or change them after.
+- default_parameters -> default parameters that are used when no json matches the video file, or when the json doesn't have all the values.
 
 ## Getting started with the YouTube API
 You have to do this before using the script.
