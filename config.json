@@ -11,6 +11,6 @@
         "description": "/home/chris/videos/common_description.txt",
         "description_as_file": true,
         "tags": ["text", "wow"],
-        "categoryID": null
+        "categoryID": 20
     }
 }
