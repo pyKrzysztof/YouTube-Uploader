@@ -8,7 +8,8 @@
     "refresh_token_path": "",
     "default_parameters": {
         "privacy": "public",
-        "description": "youtube video",
+        "description": "/home/chris/videos/common_description.txt",
+        "description_as_file": true,
         "tags": ["text", "wow"],
         "categoryID": 20
     }

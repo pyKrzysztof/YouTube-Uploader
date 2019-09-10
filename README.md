@@ -48,3 +48,4 @@ For example if video name is `tutorial.mp4` then `tutorial.json` would contain c
 
 ## What is this
 This is YouTube video uploader which utilizes the YouTube API, to use it you need oauth client secret which you need from google developers website, you have to create a project, download the api, create and download the oauth. I don't want to get into this here, just look it up.
+
