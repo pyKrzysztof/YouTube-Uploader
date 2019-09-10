@@ -38,6 +38,9 @@ else:
 
 REFRESH_TOKEN_EXISTS = os.path.isfile(REFRESH_TOKEN_PATH)
 DEFAULT_PARAMS = _config["default_parameters"]
+if DEFAULT_PARAMS['description_as_file']:
+    with open(DEFAULT_PARAMS['description'], 'r') as f:
+        DEFAULT_PARAMS['description'] = f.read()
 
 del _config
 del get_config
