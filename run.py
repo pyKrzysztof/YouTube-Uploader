@@ -57,7 +57,6 @@ def get_params(jsn):
                     with open(data['description_file'], 'r') as f:
                         data['description'] = f.read()
                 except:
-                    raise
                     data['description'] = DEFAULT_PARAMS['description']
         if not 'tags' in data:
             data['tags'] = DEFAULT_PARAMS['tags']
@@ -186,6 +185,8 @@ def main():
     default_vids = []
 
     for video_f in video_file_list:
+        if video_f.endswith('.txt'):
+            continue
         try:
             dot = video_f.rindex('.')
             name = video_f[:dot]
